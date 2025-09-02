@@ -8,6 +8,6 @@ socket.on("message", (message, remoteAddress) => {
   socket.close();
 });
 
-socket.send("Hi from Client.js", 4000, "192.168.87.41", () => {
+socket.send("Hi from Client.js", 4000, "192.168.1.101", () => {
   console.log("Message sent");
 });

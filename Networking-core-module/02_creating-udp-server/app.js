@@ -3,6 +3,8 @@ import dgram from "node:dgram"; //UDP
 const socket = dgram.createSocket("udp4");
 
 socket.on("message", (message, remoteAddress) => {
+  console.log(socket.address());
+  
   console.log(message.toString());
   console.log(remoteAddress);
 

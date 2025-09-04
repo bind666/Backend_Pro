@@ -4,7 +4,7 @@ import { writeFile } from "node:fs/promises";
 
 const socket = dgram.createSocket("udp4");
 
-const writeStream = createWriteStream("numbers.mp4");
+const writeStream = createWriteStream("mahadev.jpg");
 socket.on("message", async (message, remoteAddress) => {
   if (message.toString() === "EOF") {
     socket.send(
